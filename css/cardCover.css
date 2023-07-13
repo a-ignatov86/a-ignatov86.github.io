@@ -1,0 +1,103 @@
+body{
+    background-color: #220d2c;
+    /*#801e4f;*/
+    color: white;
+    }
+    header{
+      background: url(../img/NeonDown.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .container{
+    
+    display: flex;
+    width: 90%;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+    }
+    /*.card-bg{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    }
+    .content{
+    position: center;
+    left: 1px;
+    padding: 40px;
+    margin-top: -10px;
+    }
+    .card-categories{
+    font-size: 0.6rem;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    }
+    .card-heading{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0, 40%);
+    }
+    .card1:hover{
+    transform: scale(105%);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    }
+    .container:hover > .card1:not(:hover) .card-bg{
+    filter: brightness(0.8) blur(5px);
+    }*/
+    .card{
+        width: 300px;
+        height: 100%;
+        color: black;
+        cursor: default;
+        margin: 10px;
+        border-radius: 10px;
+        background: white;
+        overflow: hidden;
+        box-shadow: 0px 1px 10px rgba(255,255,255,0.1);
+        transition: all 400ms ease;
+      }
+      .card:hover {
+        box-shadow: 5px 5px 20px rgba(255,255,255,0.5);
+        transform: translateY(-10px);
+      }
+     /* .card img{
+        width: 250px;
+        height: 350px;
+      }*/
+      .card-bg{
+        width: 300px;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+      }
+      .card .info p {
+        color: black;
+        
+      }
+      .card .info{
+        height: 150px;
+        padding: 10px;
+        text-align: center;
+        color: black;
+        
+      }
+
+      /*.card .info a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px;
+        color: yellow;
+        border-radius: 5px;
+        border: solid 1px #2fb4cc;
+      } 
+      .card .info a:hover{
+        color: white;
+        border-radius: 5px;
+        transition: 0.5s ease;
+        background: #2fb4cc;
+        border: solid 1px #2fb4cc;
+      }for linksButton*/

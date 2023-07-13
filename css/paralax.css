@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir Next Cyr Medium";
+}
+body {
+    background: grey;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 100;
+}
+.logo {
+    color: white;
+    user-select: none;
+    font-size: 2em;
+}
+.navigation a{
+    position: relative;
+    size: 1.2em;
+    color: #FEEBB5;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 6px 15px;
+}
+.navigation a span{
+    background: #FEEBB5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 30px;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.5s;
+}
+.navigation a:hover{
+     /*padding: 5px 10px;*/
+     color: white;
+ }
+.navigation a:hover span{
+    transform: scale(1);
+    opacity: 1;
+}
+.navigation .activePage{
+    background: #FEEBB5;
+    color: white;
+    border-radius: 30px;
+}
+.container {
+    /*position: absolute;
+    top: 50vh;*/
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/NeonDown.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+#text {
+    position: absolute;
+    font-size: 5em;
+    text-shadow: 2px 4px 6px black;
+}
+.container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}/*
+.container img#gate-left{
+    transform: translateX(-200px);
+}
+.container img#gate-right{
+    transform: translateX(200px);
+}
+*/
+
+.sec {
+    position: relative;
+    background: #020912;
+    color:white;
+}
